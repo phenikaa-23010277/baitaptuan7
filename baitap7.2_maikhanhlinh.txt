@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Trang Web</title>
+  <style>
+    /* Reset mặc định */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Bố cục chung */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header, footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav {
+      background-color: #444;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    /* Bố cục cho màn hình lớn */
+    .main-content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .content {
+      width: 70%;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar {
+      width: 28%;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Bố cục cho màn hình nhỏ */
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+      }
+
+      .content, .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Trang Web Wireframe</h1>
+  </header>
+
+  <nav>
+    <a href="#">Trang Chủ</a>
+    <a href="#">Giới Thiệu</a>
+    <a href="#">Dịch Vụ</a>
+    <a href="#">Liên Hệ</a>
+  </nav>
+
+  <div class="container">
+    <div class="main-content">
+      <div class="content">
+        <h2>Nội Dung Chính</h2>
+        <p>Đây là phần nội dung chính của trang web.</p>
+      </div>
+      <div class="sidebar">
+        <h3>Thanh Bên</h3>
+        <p>Thông tin bổ sung hoặc liên kết đến các trang khác.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Trang Web Wireframe</p>
+  </footer>
+
+</body>
+</html>
